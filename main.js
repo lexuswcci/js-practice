@@ -7,29 +7,29 @@
 7. Repeat steps 1-5 using an array. */
 
 //1 2 3
-var firstName = 'lexus';
-var lastName = 'davis'
-var myAge = 31;
+// var firstName = 'lexus';
+// var lastName = 'davis'
+// var myAge = 31;
 
-console.log(firstName)
-console.log(lastName)
-console.log(myAge)
+// console.log(firstName)
+// console.log(lastName)
+// console.log(myAge)
 
-//4 5
-console.log("Hi, my name is " + firstName + ' ' + lastName +  " and I am " + myAge + " years old.")
-console.log(myAge - 10)
+// //4 5
+// console.log("Hi, my name is " + firstName + ' ' + lastName +  " and I am " + myAge + " years old.")
+// console.log(myAge - 10)
 
-//6
-const lexusDavis = {
-    myFirstName: 'Lexus',
-    myLastName: 'Davis',
-    myRealAge: 31
-}
-console.log(lexusDavis)
+// //6
+// const lexusDavis = {
+//     myFirstName: 'Lexus',
+//     myLastName: 'Davis',
+//     myRealAge: 31
+// }
+// console.log(lexusDavis)
 
-//7
-const myArray = ['Lexus', 'Davis', 31]
-console.log("Hi, my name is " + [0])
+// //7
+// const myArray = ['Lexus', 'Davis', 31]
+// console.log("Hi, my name is " + myArray[0])
 
 
 
@@ -52,3 +52,31 @@ console.log("Hi, my name is " + [0])
   
   person1.age = 31;
   console.log(person1.age);       // Output: 31*/
+
+  //Array Operation
+
+  //Push
+  let myFavoriteSportsTeams = ['Columbus Crew', 'Pittsburg Steelers', 'Cleveland Cavaliers', 'Cleveland Browns'];
+  myFavoriteSportsTeams.push('Ohio University Bobcats');
+  //console.log(myFavoriteSportsTeams);
+  
+  //Pop
+  let mVP = myFavoriteSportsTeams.pop();
+  //console.log(mVP);
+  //console.log(myFavoriteSportsTeams);
+
+  //Splice
+  let myFavoriteTeam = myFavoriteSportsTeams.splice(2,2);
+  //console.log(myFavoriteTeam);
+  //console.log(myFavoriteSportsTeams);
+
+  //Shift & Unshift
+  let myFavoriteSoccerTeam = myFavoriteSportsTeams.shift();
+  console.log(myFavoriteSoccerTeam);
+  console.log(myFavoriteSportsTeams)
+
+  //Unshift
+  myFavoriteSportsTeams.unshift('Bengals');
+  console.log(myFavoriteSportsTeams);
+
+  
